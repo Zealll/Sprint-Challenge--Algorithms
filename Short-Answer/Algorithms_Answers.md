@@ -5,6 +5,23 @@
 a)
     Since we have n * n * n, it is the same thing as n^3, so it would start with O(n^3), however, in the while loop, we are adding a + n * n and we are restarting the loop
     that is the asme thing as n^2. Take out n^2 out of n^3 and we are left with ```O(n)```
+    
+    for Example:
+        a = 0
+        while (a < n * n * n):
+            a = a + n * n
+        
+        
+        Let's say that n is 3
+        a = 0
+
+        while loop will have the same condition as while a is less than 27 (3 * 3 * 3)
+            after the first time, a will be 9 (0 + 3 * 3 = 9)
+            after second time it will be 18 (9 + 3 * 3 = 18)
+            after third time it will be 27 (18 + 3 * 3 = 27)
+            and then the fourth time the while loop is not gonna run, because 27 is not less than 3*3*3(27)
+
+            So the while loop only ran 3 times, which is also what `n` was
 
 b)
     sum = 0
